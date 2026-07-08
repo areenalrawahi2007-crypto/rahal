@@ -78,14 +78,15 @@ const gearItems = Array.from({ length: 50 }, (_, index) => {
     id: `gear-${num}`,
     category,
     title: gearTitleMap[num] || `عدة ${category}`,
-   image: gearImageMap[num] || getRealPhotoUrl('gear', (num % 3) + 1)
-    description: gearTitleMap[num]
-      ? `مجموعة ${gearTitleMap[num]} تحتوي على المعدات اللازمة لمغامرة آمنة ومريحة.`
-      : `عدة ${category} مفصلة للرحلات والنزهات، مع فحص سلامة وتغليف مناسب.`,
+    image: gearImageMap[num] || getRealPhotoUrl('gear', (num % 3) + 1),
+    description: gearTitleMap[num] 
+      ? `المعدات اللازمة لمغامرة آمنة ومريحة لـ ${gearTitleMap[num]} مجموعة` 
+      : `عدة ${category} للرحلات والنزهات، مع فحص سلامة وتغليف مناسب`,
     price: 15 + (num % 12) * 6,
-    details: `معدات ${category} مناسبة لكل المشاوير والنزهات، مع ضمان دعم كامل.`,
+    details: `مواصفات: معدات ${category} مع ضمان دعم كامل المشاوير والنزهات`
   };
 });
+    
 
 const rentalVehicleTypes = ['جيب صحراوي', 'دفع رباعي صغيرة', 'شاحنة نقل', 'تانك مروحية', 'دراجة جبلية', 'جسكي', 'كاياك', 'قارب تجديف', 'فان كرافان', 'سكوتر كهربائي'];
 
