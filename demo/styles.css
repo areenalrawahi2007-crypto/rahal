@@ -728,3 +728,31 @@ body {
     width: 100%;
   }
 }
+/* كود الألوان الجديد لمنصة رَحَال */
+:root {
+    --primary-orange: #D96B43;
+    --warm-beige: #EFE6CE;
+    --dark-olive: #2A3325;
+    --bg-light: #FDFBF7;
+}
+
+body {
+    background-color: var(--bg-light) !important;
+    color: var(--dark-olive) !important;
+}
+
+/* تنسيق الأزرار الأساسية */
+.btn-primary, .button, button, input[type="submit"] {
+    background-color: var(--primary-orange) !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    padding: 10px 24px !important;
+    border: none !important;
+}
+
+/* تنسيق بطاقات الرحلات وسلة الطلبات والواجهات الجانبية */
+.card, .cart-box, .sidebar, .preview-box, [class*="box"] {
+    background-color: var(--warm-beige) !important;
+    border: 1px solid #DFD5B9 !important;
+    border-radius: 12px !important;
+}
