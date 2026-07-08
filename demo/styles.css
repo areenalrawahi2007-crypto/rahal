@@ -757,12 +757,15 @@ body {
     border-radius: 12px !important;
 }
 .my-images-section {
-    display: flex;
-    gap: 15px;
-    padding: 20px;
-    width: 100%;
+    display: flex !important; /* فرض الترتيب بجانب بعض */
+    flex-direction: row !important; /* التأكد من أنها في صف واحد */
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
 }
+
 .my-images-section img {
-    width: 33%;
-    border-radius: 15px;
+    width: 30% !important; /* كل صورة تأخذ جزء من العرض */
+    height: auto !important;
+    border-radius: 15px !important;
 }
