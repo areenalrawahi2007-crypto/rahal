@@ -756,3 +756,13 @@ body {
     border: 1px solid #DFD5B9 !important;
     border-radius: 12px !important;
 }
+.my-images-section {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+}
+.my-images-section img {
+    width: 33%;
+    border-radius: 15px;
+}
