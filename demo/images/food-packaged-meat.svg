@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240">
+  <rect width="400" height="240" rx="24" ry="24" fill="#fee2b8" />
+  <rect x="70" y="70" width="260" height="120" rx="24" fill="#fb923c" stroke="#b45309" stroke-width="12" />
+  <path d="M110 105 c20 -20 60 -20 80 0" fill="#f97316" stroke="#c2410c" stroke-width="10" />
+  <path d="M110 145 c20 20 60 20 80 0" fill="#f97316" stroke="#c2410c" stroke-width="10" />
+  <rect x="100" y="90" width="40" height="80" rx="10" fill="#fef3c7" />
+  <rect x="260" y="90" width="40" height="80" rx="10" fill="#fef3c7" />
+  <text x="50%" y="220" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="24" text-anchor="middle" fill="#7c2d12">لحم مُغَلف</text>
+</svg>

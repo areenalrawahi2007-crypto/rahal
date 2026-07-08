@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رحال - ديمو</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">رحال</span>
+        <span class="tagline">منصة مغامرات ومعدات وتأجير</span>
+      </div>
+      <form class="search-form" aria-label="بحث موحد">
+        <input type="search" placeholder="ابحث عن رحلة أو معدات أو مركبة" id="searchInput">
+        <button type="button" id="searchButton">🔍</button>
+      </form>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="admin.html" class="nav-link">لوحة الإدارة</a>
+        <a href="supplier.html" class="nav-link supplier-link">انضم كمورد</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>اكتشف مغامرتك القادمة</h1>
+          <p>رحال تجمع رحلات جاهزة، تأجير مركبات، متجر معدات، وخيارات أكل مع تجربة حجز سريعة وسلسة.</p>
+          <div class="hero-actions">
+            <button class="primary-btn" data-action="open-booking">تصفح الرحلات الجاهزة</button>
+            <button class="secondary-btn" data-action="open-builder">جهّز رحلتك بنفسك</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-box">
+            <strong>رحلات مقترحة اليوم</strong>
+            <p>انطلق مع دليل معتمد في جبال ظفار أو استأجر مركبة وابدأ رحلة الصحراء.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-action-panel">
+        <header class="section-header">
+          <h2>لوحة الإدارة</h2>
+          <p>الوصول السريع لقسم الإدارة مستقل في صفحة منفصلة لتجربة صفحات مفصولة.</p>
+        </header>
+        <div class="action-panel-grid">
+          <article class="feature-card">
+            <h3>لوحة الإدارة</h3>
+            <p>اطّلع على صحة العمل والتقارير والتنبيهات من صفحة منفصلة.</p>
+            <a class="primary-btn" href="admin.html">اذهب إلى لوحة الإدارة</a>
+          </article>
+          <article class="feature-card">
+            <h3>الشروط والخصوصية</h3>
+            <p>اقرأ سياسات المنصة في صفحات مستقلة وسهلة الوصول.</p>
+            <div class="feature-actions">
+              <a class="secondary-btn" href="terms.html">الشروط</a>
+              <a class="secondary-btn" href="privacy.html">الخصوصية</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="slider-section" aria-label="أشهر الرحلات">
+        <header class="section-header">
+          <h2>أشهر الرحلات الآن</h2>
+          <p>بطاقات مع سعة فعلية وعدد الأماكن المتبقية.</p>
+        </header>
+        <div class="slider" id="tripCards"></div>
+      </section>
+
+      <section class="sections-tabs">
+        <header class="section-header">
+          <h2>اقسام التجربة</h2>
+          <p>اضغط على أي قسم لعرض محتواه فقط، بدلًا من أن تظهر جميع الأقسام معًا.</p>
+        </header>
+        <div class="tab-controls" id="tabControls">
+          <button class="tab-btn" data-tab="summary">نظرة عامة</button>
+          <button class="tab-btn active" data-tab="gear">المعدات</button>
+          <button class="tab-btn" data-tab="vehicles">المركبات</button>
+          <button class="tab-btn" data-tab="food">الطعام</button>
+        </div>
+      </section>
+
+      <div class="tab-panel" id="panel-summary">
+        <section class="summary-section">
+          <header class="section-header">
+            <h2>ملخص صفحات الديمو والتعديلات</h2>
+            <p>هذا القسم يجمع كل الصفحات الجديدة والتعديلات التي أجريت لتظهر مباشرة في تجربة الديمو.</p>
+          </header>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <h3><a href="index.html">الصفحة الرئيسية</a></h3>
+              <p>واجهة تجربة المشتري والمورد مع عرض الرحلات، السلة، وملخص الصفحات.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="admin.html">لوحة الإدارة</a></h3>
+              <p>صفحة منفصلة تعرض مؤشرات الأداء، إدارة الموردين، الحجوزات، الشكاوى، والتسويات.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="supplier.html">تسجيل المورد</a></h3>
+              <p>نموذج تسجيل مورد جديد يدعم الشركات والأفراد المستقلين بدون سجل تجاري.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="about.html">من نحن</a></h3>
+              <p>صفحة تعريفية بمهمة رحال، رؤيتها وقيمها.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="contact.html">التواصل</a></h3>
+              <p>صفحة اتصال مع نموذج رسالة ورابط سريع لحجوزاتي.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="terms.html">الشروط والأحكام</a></h3>
+              <p>صفحة منفصلة تعرض شروط الاستخدام وسياسات التسجيل، الحجز، والإلغاء.</p>
+            </article>
+            <article class="summary-card">
+              <h3><a href="privacy.html">سياسة الخصوصية</a></h3>
+              <p>صفحة منفصلة توضح كيفية جمع البيانات واستخدامها وحماية خصوصية المستخدم.</p>
+            </article>
+          </div>
+          <div class="summary-notes">
+            <h4>التعديلات الرئيسية</h4>
+            <ul>
+              <li>إضافة صفحات منفصلة لـ: الإدارة، المورد، من نحن، التواصل، الشروط، والخصوصية.</li>
+              <li>دعم تسجيل الموردين الأفراد بدون سجل تجاري.</li>
+              <li>توسيع متجر المعدات ليشمل معدات الغوص، التخييم، التسلق، الطبخ، الصيد، والمشي.</li>
+              <li>إضافة 50 مثالًا لكل من فئات المعدات، المركبات المؤجرة، وعروض الطعام.</li>
+              <li>توسيع حجز التأجير ليشمل جيب، دراجة جبلية، جسكي، قارب، فان كرافان، والمزيد.</li>
+              <li>تحديث تجربة السلة مع حفظ محلي واستئناف واسترجاع سريع.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="tab-panel active" id="panel-gear">
+        <section class="product-section" aria-label="معدات الرحلات">
+          <header class="section-header">
+            <h2>معدات الرحلات</h2>
+            <p>50 مثالًا على أدوات ومعدات مع صور، تفاصيل، وأسعار لكل عنصر.</p>
+            <p class="section-note">اضغط على زر "أضف للسلة" داخل أي بطاقة لإضافة العنصر مباشرة إلى السلة.</p>
+          </header>
+          <div class="product-grid" id="gearGrid"></div>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="panel-vehicles">
+        <section class="product-section" aria-label="مركبات التأجير">
+          <header class="section-header">
+            <h2>المركبات المؤجرة</h2>
+            <p>50 نموذجًا لمركبات التأجير مع صور، وصف، وسعر يومي.</p>
+            <p class="section-note">اضغط على زر "أضف للسلة" داخل بطاقة المركبة لاختيارها وإضافتها مباشرةً.</p>
+          </header>
+          <div class="product-grid" id="rentalGrid"></div>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="panel-food">
+        <section class="product-section" aria-label="عروض الطعام">
+          <header class="section-header">
+            <h2>عروض الطعام والمطاعم</h2>
+            <p>50 عرضًا غذائيًا متنوعًا من وجبات مخيم، بوفية، ساندويتشات، وصناديق زيارة.</p>
+            <p class="section-note">اضغط على زر "أضف للسلة" لاحتساب الوجبة ضمن الطلب الخاص بك.</p>
+          </header>
+          <div class="product-grid" id="foodGrid"></div>
+        </section>
+      </div>
+
+      <section class="trust-bar">
+        <div>
+          <strong>120+</strong>
+          مورد معتمد
+        </div>
+        <div>
+          <strong>4.8★</strong>
+          تقييم العملاء
+        </div>
+        <div>
+          <strong>340+</strong>
+          رحلة منفذة
+        </div>
+      </section>
+
+      <section class="features" aria-label="مسارات المستخدم">
+        <header class="section-header">
+          <h2>مسار المشتري</h2>
+          <p>تصفح حر، حجز فوري، وتوثيق ما بعد الدفع بدون تعطيل تجربة الشراء.</p>
+        </header>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>الرحلات الجاهزة</h3>
+            <p>صفحات رحلة تحتوي على مسار يومي، سياسة إلغاء، وتفاصيل المورد.</p>
+            <button data-action="open-booking" data-type="ready">احجز رحلة</button>
+          </article>
+          <article class="feature-card">
+            <h3>جهّز رحلتك بنفسك</h3>
+            <p>أضف أنشطة ومركبات ومعدات في سلة واحدة مع اقتراحات باقات جاهزة.</p>
+            <button data-action="open-builder">ابدأ الإنشاء</button>
+          </article>
+          <article class="feature-card">
+            <h3>متجر المعدات</h3>
+            <p>معدات جديدة ومستعملة مع شهادة فحص لكل أداة مهمة.</p>
+            <button data-action="open-shop">تصفح المتجر</button>
+          </article>
+          <article class="feature-card">
+            <h3>تأجير المركبات</h3>
+            <p>توفر مركبات الرحلات والنشاطات: جيب صحراوي، دفع رباعي، دراجة جبلية، جسكي، قارب، وفان كرافان.</p>
+            <button data-action="open-rental">احجز تأجير</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="supplier-journey" id="join-supplier">
+        <header class="section-header">
+          <h2>مسار المورد</h2>
+          <p>التسجيل، المراجعة، لوحة تحكم لإدارة التوفر والحجوزات، وتسوية مالية واضحة.</p>
+        </header>
+        <div class="supplier-grid">
+          <article>
+            <h3>تسجيل مورد جديد</h3>
+            <ul>
+              <li>نوع المورد</li>
+              <li>بيانات الترخيص والتأمين</li>
+              <li>حالة الطلب: قيد المراجعة</li>
+            </ul>
+          </article>
+          <article>
+            <h3>لوحة تحكم المورد</h3>
+            <ul>
+              <li>إدارة العروض وسعات التوفر</li>
+              <li>حجوزات واردة وتقويم توافر</li>
+              <li>كشف تسويات مالية</li>
+            </ul>
+          </article>
+        </div>
+        <button class="primary-btn" data-action="open-supplier-form">سجّل موردًا الآن</button>
+      </section>
+
+      <section class="booking-highlights">
+        <header class="section-header">
+          <h2>مزايا تجربة رحال</h2>
+        </header>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <h4>دفع فوري، إجراءات لاحقة</h4>
+            <p>الدفع لا يتوقف عند توقيع إقرار المخاطر. تُرسل الإجراءات الشكلية بعد الحجز.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>حفظ السلة تلقائيًا</h4>
+            <p>استأنف سلتك لاحقًا من نفس الجهاز أو من حسابك.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>فاتورة واحدة واضحة</h4>
+            <p>عميلك يرى فاتورة واحدة موحدة مع بنود منفصلة لكل خدمة.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>وضع ضيف</h4>
+            <p>يمكن الحجز والطلب دون إنشاء حساب كامل من البداية.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" aria-label="سلة المشتريات">
+      <h2>سلة الطلب</h2>
+      <div id="cartItems"></div>
+      <div class="cart-summary">
+        <div>الإجمالي: <strong id="cartTotal">0 ر.ع</strong></div>
+        <button class="primary-btn" id="checkoutButton">إتمام الدفع</button>
+        <button class="secondary-btn" id="resumeButton">استأنف السلة</button>
+      </div>
+      <div class="quick-actions">
+        <button class="link-btn" id="quickRebook">إعادة حجز سريع</button>
+      </div>
+    </aside>
+
+    <footer class="page-footer">
+      <div>© 2026 رحال</div>
+      <div class="footer-links">
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">التواصل</a>
+        <a href="terms.html">الشروط</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </div>
+    </footer>
+
+    <div class="modal-overlay hidden" id="modalOverlay"></div>
+    <div class="modal hidden" id="modal">
+      <button class="close-btn" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

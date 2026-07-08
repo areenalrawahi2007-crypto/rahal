@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الإدارة - رحال</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">رحال</span>
+        <span class="tagline">لوحة الإدارة</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="supplier.html" class="nav-link supplier-link">انضم كمورد</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="admin-dashboard" aria-label="لوحة معلومات الإدارة">
+        <header class="section-header">
+          <h2>لوحة معلومات الإدارة</h2>
+          <p>الحالة الحالية كمسؤول: صحة العمل، الحجوزات، التنبيهات، وأفضل العناصر.</p>
+        </header>
+        <div class="dashboard-grid" id="adminMetrics"></div>
+        <div class="admin-actions-grid" id="adminActions"></div>
+        <div class="dashboard-main">
+          <div class="dashboard-chart">
+            <h3>إجمالي المبيعات</h3>
+            <div class="chart-bars" id="salesChart"></div>
+            <div class="chart-labels">
+              <span>اليوم</span>
+              <span>الأسبوع</span>
+              <span>الشهر</span>
+            </div>
+          </div>
+          <div class="dashboard-details">
+            <div class="dashboard-card">
+              <h4>التنبيهات العاجلة</h4>
+              <ul id="urgentAlerts"></ul>
+            </div>
+            <div class="dashboard-card">
+              <h4>أفضل 5 رحلات/منتجات هذا الأسبوع</h4>
+              <ol id="topItems"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>© 2026 رحال</div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">التواصل</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التواصل - رحال</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">رحال</span>
+        <span class="tagline">التواصل</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="admin.html" class="nav-link">لوحة الإدارة</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <header class="section-header">
+          <h2>تواصل معنا</h2>
+          <p>نحب نسمع منك — سواء عندك سؤال، استفسار عن حجز، أو تبي تنضم كمورد.</p>
+        </header>
+        <div class="content-card">
+          <p>📧 البريد الإلكتروني: <a href="mailto:support@rahal.om">support@rahal.om</a></p>
+          <p>📱 واتساب/هاتف: رقم الدعم</p>
+          <p>🕐 أوقات العمل: السبت–الخميس، 9 صباحًا – 9 مساءً</p>
+          <form id="contactFormPage">
+            <label>الاسم الكامل<input type="text" name="fullName" required></label>
+            <label>البريد الإلكتروني / رقم الجوال<input type="text" name="contactInfo" required></label>
+            <label>نوع الاستفسار<select name="inquiryType" required>
+              <option value="حجز رحلة">حجز رحلة</option>
+              <option value="تأجير مركبة">تأجير مركبة</option>
+              <option value="بيع أداة">بيع أداة</option>
+              <option value="انضمام كمورد">انضمام كمورد</option>
+              <option value="شكوى">شكوى</option>
+              <option value="استفسار عام">استفسار عام</option>
+            </select></label>
+            <label>رقم الحجز (اختياري)<input type="text" name="bookingNumber" placeholder="يظهر فقط لحجز رحلة أو تأجير"></label>
+            <label>نص الرسالة<textarea name="message" rows="4" required></textarea></label>
+            <button type="submit" class="primary-btn">إرسال الرسالة</button>
+          </form>
+          <div class="note-box">
+            <p><strong>رابط سريع:</strong> هل لديك مشكلة عاجلة بحجز حالي؟ <a href="admin.html">اذهب إلى صفحه الحجوزات</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>© 2026 رحال</div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="admin.html">لوحة الإدارة</a>
+        <a href="about.html">من نحن</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدفع - رحال</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">رحال</span>
+        <span class="tagline">صفحة الدفع</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="supplier.html" class="nav-link">انضم كمورد</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="checkout-page">
+        <header class="section-header">
+          <h2>الدفع وإنهاء الحجز</h2>
+          <p>هنا يتم توضيح طريقة الدفع والشروط والأحكام الخاصة بالرحلة أو التأجير أو المشتريات.</p>
+        </header>
+
+        <div class="checkout-grid">
+          <article class="content-card">
+            <h3>ماذا يشمل هذا الدفع؟</h3>
+            <ul>
+              <li>المبلغ الإجمالي لكل عنصر في السلة.</li>
+              <li>رسوم تأمين للسيارات مؤقتة وتوثيق استلام المركبة.</li>
+              <li>رسوم تجهيز معدات وتغليف الأكل إذا طلبها العميل.</li>
+              <li>خدمة السلة والطلب متاحة بدون تسجيل حساب كامل.</li>
+            </ul>
+          </article>
+
+          <article class="content-card">
+            <h3>خطوات الدفع</h3>
+            <ol>
+              <li>راجع تفاصيل السلة.</li>
+              <li>أكد معلوماتك الأساسية.</li>
+              <li>ادفع المبلغ المطلوب الآن.</li>
+              <li>ستتلقى رسالة تأكيد تحتوي على الشروط وإقرار المخاطر.</li>
+            </ol>
+          </article>
+
+          <article class="content-card">
+            <h3>الشروط والأحكام</h3>
+            <p>رحال تعمل كمنصة وسيطة. المسؤولية على المورد لتسليم المركبة والمعدات بأمان والحفاظ على جودة الخدمة.</p>
+            <p>نحن لا نقدم مرشدين سياحيين ضمن خدماتنا؛ خدماتنا تقتصر على تأجير المركبات، بيع أو تأجير المعدات، وتوفير الوجبات.</p>
+            <p>قبل إتمام الدفع، يجب على العميل قبول الشروط والأحكام وسياسة الخصوصية.</p>
+          </article>
+
+          <article class="content-card">
+            <h3>معلومات هامة</h3>
+            <p>جميع الطلبات تخضع لمراجعة الموردين وإمكانية التوفر الفعلي.</p>
+            <p>قد يتطلب الحجز تأكيدًا إضافيًا من المورد بعد الدفع لضمان التوقيت والمعدات المطلوبة.</p>
+            <p>عملتنا هي الريال العماني (ر.ع) في هذا الديمو.</p>
+          </article>
+        </div>
+
+        <div class="payment-actions">
+          <button class="primary-btn" id="confirmPayment">أكمل الدفع الآن</button>
+          <button class="secondary-btn" onclick="window.location.href='index.html'">العودة للسلة</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>© 2026 رحال</div>
+      <div class="footer-links">
+        <a href="terms.html">الشروط</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('confirmPayment').addEventListener('click', () => {
+      alert('تمت عملية الدفع بنجاح في هذا الديمو. في التطبيق الحقيقي، ستُرسل تفاصيل الدفع والشروط بشكل نهائي.');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>انضم كمورد - رحال</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">رحال</span>
+        <span class="tagline">انضم كمورد</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="admin.html" class="nav-link">لوحة الإدارة</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="supplier-journey">
+        <header class="section-header">
+          <h2>تسجيل مورد جديد</h2>
+          <p>النموذج يشمل الشركات والأفراد بدون سجل تجاري.</p>
+        </header>
+        <div class="content-card">
+          <form id="supplierFormPage">
+            <label>نوع المورد<select name="supplierType">
+              <option>شركة رحلات</option>
+              <option>مالك مركبة</option>
+              <option>بائع معدات</option>
+              <option>مزود أكل</option>
+              <option>فرد مستقل</option>
+            </select></label>
+            <label>الاسم التجاري / الاسم الشخصي<input type="text" name="businessName" required></label>
+            <label>رقم السجل التجاري أو الهوية<input type="text" name="registrationNumber" placeholder="اتركه فارغًا إذا كنت فردًا بدون سجل" ></label>
+            <label>رفع وثيقة الترخيص أو الهوية<input type="file" name="licenseFile" accept="application/pdf,image/*" required></label>
+            <label>رفع وثيقة التأمين<input type="file" name="insuranceFile" accept="application/pdf,image/*" required></label>
+            <label>البيان البنكي<input type="text" name="bankAccount" required></label>
+            <label><input type="checkbox" name="declaration" required> أقر بأنني مرخّص أو موثق كفرد، ومؤمن حسب المتطلبات.</label>
+            <button type="submit" class="primary-btn">إرسال طلب المراجعة</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>© 2026 رحال</div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="admin.html">لوحة الإدارة</a>
+        <a href="about.html">من نحن</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
