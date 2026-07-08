@@ -756,34 +756,25 @@ body {
     border: 1px solid #DFD5B9 !important;
     border-radius: 12px !important;
 }
-<section class="pro-grid">
-    <div class="box-large">
-        <img src="images/images1.png" alt="المغامرة">
-        <h2>الإلهام والمغامرة</h2>
-        <p>استكشف عُمان... حيث تبدأ المغامرة الحقيقية</p>
-    </div>
-    <div class="box-small">
-        <div class="card">
-            <img src="images/images2.png" alt="السهولة">
-            <h3>السهولة والذكاء</h3>
-        </div>
-        <div class="card">
-            <img src="images/images3.png" alt="التجهيز">
-            <h3>التجهيز الكامل</h3>
-        </div>
-    </div>
-</section>
-
-.pro-grid {
+.rihal-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 30px;
+    gap: 30px;
+    padding: 40px;
+    direction: rtl;
 }
-.box-large img, .card img {
+.left-side img, .card img {
     width: 100%;
     border-radius: 20px;
-    transition: 0.3s;
+    display: block;
 }
-.box-small { display: flex; flex-direction: column; gap: 20px; }
-.card { background: #fff; padding: 10px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card {
+    background: #fcfbf7;
+    padding: 15px;
+    border-radius: 20px;
+}
