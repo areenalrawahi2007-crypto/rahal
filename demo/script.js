@@ -71,22 +71,32 @@ const gearTitleMap = {
 
 const gearCategoryMap = ['غوص', 'تخييم', 'تسلق', 'مشي', 'طبخ', 'صيد'];
 
-const gearItems = Array.from({ length: 50 }, (_, index) => {
+ const gearItems = Array.from({ length: 50 }, (_, index) => {
   const num = index + 1;
   const category = gearCategoryMap[num % gearCategoryMap.length];
+  
+  // روابط صور واقعية ومباشرة لكل نوع من المعدات لتظهر بشكل فخم في المتجر
+  let imageUrl = 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop'; // غوص كافتراضي
+  
+  if (category === 'تخييم') {
+    imageUrl = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=600&auto=format&fit=crop';
+  } else if (category === 'تسلق') {
+    imageUrl = 'https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=600&auto=format&fit=crop';
+  } else if (category === 'مشى' || category === 'رحلات') {
+    imageUrl = 'https://images.unsplash.com/photo-1551632811-561730d1e4a6?q=80&w=600&auto=format&fit=crop';
+  }
+
   return {
     id: `gear-${num}`,
     category,
     title: gearTitleMap[num] || `عدة ${category}`,
-    image: gearImageMap[num] || getRealPhotoUrl('gear', (num % 3) + 1),
+    image: imageUrl, // هنا الكود بيسحب الصورة مباشرة من الرابط
     description: gearTitleMap[num] 
       ? `المعدات اللازمة لمغامرة آمنة ومريحة لـ ${gearTitleMap[num]} مجموعة` 
       : `عدة ${category} للرحلات والنزهات، مع فحص سلامة وتغليف مناسب`,
     price: 15 + (num % 12) * 6,
     details: `مواصفات: معدات ${category} مع ضمان دعم كامل المشاوير والنزهات`
-  };
-});
-    
+  }; 
 
 const rentalVehicleTypes = ['جيب صحراوي', 'دفع رباعي صغيرة', 'شاحنة نقل', 'تانك مروحية', 'دراجة جبلية', 'جسكي', 'كاياك', 'قارب تجديف', 'فان كرافان', 'سكوتر كهربائي'];
 
