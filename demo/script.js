@@ -75,9 +75,7 @@ const gearCategoryMap = ['غوص', 'تخييم', 'تسلق', 'مشي', 'طبخ',
   const num = index + 1;
   const category = gearCategoryMap[num % gearCategoryMap.length];
   
-  // روابط صور واقعية ومباشرة لكل نوع من المعدات لتظهر بشكل فخم في المتجر
-  let imageUrl = 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop'; // غوص كافتراضي
-  
+  let imageUrl = 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop';
   if (category === 'تخييم') {
     imageUrl = 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=600&auto=format&fit=crop';
   } else if (category === 'تسلق') {
@@ -90,13 +88,14 @@ const gearCategoryMap = ['غوص', 'تخييم', 'تسلق', 'مشي', 'طبخ',
     id: `gear-${num}`,
     category,
     title: gearTitleMap[num] || `عدة ${category}`,
-    image: imageUrl, // هنا الكود بيسحب الصورة مباشرة من الرابط
+    image: imageUrl,
     description: gearTitleMap[num] 
       ? `المعدات اللازمة لمغامرة آمنة ومريحة لـ ${gearTitleMap[num]} مجموعة` 
       : `عدة ${category} للرحلات والنزهات، مع فحص سلامة وتغليف مناسب`,
     price: 15 + (num % 12) * 6,
     details: `مواصفات: معدات ${category} مع ضمان دعم كامل المشاوير والنزهات`
-  }; 
+  };
+});
 
 const rentalVehicleTypes = ['جيب صحراوي', 'دفع رباعي صغيرة', 'شاحنة نقل', 'تانك مروحية', 'دراجة جبلية', 'جسكي', 'كاياك', 'قارب تجديف', 'فان كرافان', 'سكوتر كهربائي'];
 
