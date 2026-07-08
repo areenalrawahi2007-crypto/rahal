@@ -77,8 +77,8 @@ const gearItems = Array.from({ length: 50 }, (_, index) => {
   return {
     id: `gear-${num}`,
     category,
-    title: gearTitleMap[num] || `عدة ${category} ${num}`,
-    image: gearImageMap[num] || getRealPhotoUrl('gear', num),
+    title: gearTitleMap[num] || `عدة ${category}`,
+   image: gearImageMap[num] || getRealPhotoUrl('gear', (num % 3) + 1)
     description: gearTitleMap[num]
       ? `مجموعة ${gearTitleMap[num]} تحتوي على المعدات اللازمة لمغامرة آمنة ومريحة.`
       : `عدة ${category} مفصلة للرحلات والنزهات، مع فحص سلامة وتغليف مناسب.`,
