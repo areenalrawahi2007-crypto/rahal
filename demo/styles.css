@@ -756,16 +756,34 @@ body {
     border: 1px solid #DFD5B9 !important;
     border-radius: 12px !important;
 }
-.my-images-section {
-    display: flex !important; /* فرض الترتيب بجانب بعض */
-    flex-direction: row !important; /* التأكد من أنها في صف واحد */
-    justify-content: center !important;
-    gap: 10px !important;
-    width: 100% !important;
-}
+<section class="pro-grid">
+    <div class="box-large">
+        <img src="images/images1.png" alt="المغامرة">
+        <h2>الإلهام والمغامرة</h2>
+        <p>استكشف عُمان... حيث تبدأ المغامرة الحقيقية</p>
+    </div>
+    <div class="box-small">
+        <div class="card">
+            <img src="images/images2.png" alt="السهولة">
+            <h3>السهولة والذكاء</h3>
+        </div>
+        <div class="card">
+            <img src="images/images3.png" alt="التجهيز">
+            <h3>التجهيز الكامل</h3>
+        </div>
+    </div>
+</section>
 
-.my-images-section img {
-    width: 30% !important; /* كل صورة تأخذ جزء من العرض */
-    height: auto !important;
-    border-radius: 15px !important;
+.pro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
 }
+.box-large img, .card img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.box-small { display: flex; flex-direction: column; gap: 20px; }
+.card { background: #fff; padding: 10px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
